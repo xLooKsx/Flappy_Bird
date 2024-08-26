@@ -123,6 +123,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &194349230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 194349232}
+  - component: {fileID: 194349231}
+  m_Layer: 0
+  m_Name: ObstacleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &194349231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194349230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c73b40bab00fe54ea14c48c27674ad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObstaclePrefab: {fileID: 1312189211181501697, guid: f4fe2894d2c46b3418b7c98c8cbaffcb, type: 3}
+  GameManager: {fileID: 1422393065}
+  cooldown: 3
+--- !u!4 &194349232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194349230}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &474962296
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba20a97667057f45961066933adae25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1422393065}
+  GameManager: {fileID: 1422393065}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,7 +843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba20a97667057f45961066933adae25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1422393065}
+  GameManager: {fileID: 1422393065}
 --- !u!1 &1300730202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,7 +1318,7 @@ Transform:
   m_GameObject: {fileID: 1702280757}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.47, y: 0, z: 0}
   m_LocalScale: {x: 0.59736896, y: 0.59736896, z: 0.59736896}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1384,4 +1431,5 @@ SceneRoots:
   - {fileID: 846131881}
   - {fileID: 2006963555}
   - {fileID: 1422393067}
+  - {fileID: 194349232}
   - {fileID: 1770029638}
