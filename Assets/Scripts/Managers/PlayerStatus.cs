@@ -5,16 +5,16 @@ using UnityEngine;
 public class PlayerStatus : MonoBehaviour
 {
 
-    private int PlayerScore;
+    private int score;
     private bool PlayerAlive;
 
 
-    public int GetPlayerScore(){
-        return this.PlayerScore;
+    public int Getscore(){
+        return this.score;
     }
 
-      public void AddPlayerScore(){
-        this.PlayerScore++;
+      public void Addscore(){
+        this.score++;
     }    
 
     public bool IsPlayerAlive(){

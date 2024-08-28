@@ -19,4 +19,9 @@ public class TopLevel : MonoBehaviour
         this.PlayerStatus.SetPlayerAlive(false);
         this.UiManager.ShowGameOverPanel();
     }
+
+    public void addPlayerSocore(){
+        this.PlayerStatus.Addscore();
+        this.UiManager.UpdateScoreText(PlayerStatus.Getscore().ToString());
+    }    
 }
